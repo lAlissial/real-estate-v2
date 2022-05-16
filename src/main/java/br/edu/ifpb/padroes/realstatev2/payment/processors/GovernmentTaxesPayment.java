@@ -16,7 +16,7 @@ public class GovernmentTaxesPayment extends BasePaymentProcessor {
         BigDecimal governmentTaxes = property.getPrice().multiply(BigDecimal.valueOf(0.05));
         log.info(String.format("Pay %f for government taxes", governmentTaxes));
 
-        this.checkNext(property);
+        checkNext(property);
 
     }
 

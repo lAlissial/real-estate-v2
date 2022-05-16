@@ -15,7 +15,7 @@ public class RealEstatePayment extends BasePaymentProcessor {
         BigDecimal realStateComission = property.getPrice().multiply(BigDecimal.valueOf(0.10));
         log.info(String.format("Pay %f for real state", realStateComission));
 
-        this.checkNext(property);
+        checkNext(property);
 
     }
 
