@@ -14,7 +14,7 @@ public abstract class BasePaymentProcessor implements PaymentProcessor{
 
     public abstract void process(Property property);
 
-    protected void checkNext(Property property){
+    protected void processNext(Property property){
         if(next != null) {
             next.process(property);
         }

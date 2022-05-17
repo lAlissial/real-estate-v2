@@ -14,6 +14,6 @@ public class PropertyPayment extends BasePaymentProcessor {
     public void process(Property property) {
         log.info(String.format("Pay %f for the property taxes", property.getPrice()));
 
-        checkNext(property);
+        processNext(property);
     }
 }
