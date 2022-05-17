@@ -23,9 +23,5 @@ public class PaymentService {
         realEstatePayment.linkWith(propertyPayment);
         governmentTaxesPayment.process(sale);
 
-        //BasePaymentProcessor basePaymentProcessor = governmentTaxesPayment;
-        //basePaymentProcessor.linkWith(realEstatePayment).linkWith(propertyPayment);
-        //basePaymentProcessor.process(sale);
     }
-
 }

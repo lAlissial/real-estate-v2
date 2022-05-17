@@ -19,11 +19,11 @@ public class PaymentServiceTest {
     @SpyBean
     private PaymentService paymentService;
 
-    @MockBean
+    @SpyBean
     private GovernmentTaxesPayment governmentTaxesPayment;
-    @MockBean
+    @SpyBean
     private RealEstatePayment realEstatePayment;
-    @MockBean
+    @SpyBean
     private PropertyPayment propertyPayment;
 
     @Test
