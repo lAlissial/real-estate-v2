@@ -18,10 +18,10 @@ public class PaymentService {
     public void pay(Property sale) {
 
         // TODO - implementar Chain of Responsibility para que ordem dos métodos de pagamento seja dinâmica (definida em tempo de execução)
+
+        governmentTaxesPayment.linkWith(realEstatePayment);
+        realEstatePayment.linkWith(propertyPayment);
         governmentTaxesPayment.process(sale);
-        realEstatePayment.process(sale);
-        propertyPayment.process(sale);
 
     }
-
 }
