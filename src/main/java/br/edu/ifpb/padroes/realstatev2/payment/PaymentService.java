@@ -27,7 +27,7 @@ public class PaymentService {
 
     }
 
-    public void payProperties(Property... properties) {
+    public void pay(Property... properties) {
         allProperties.clear();
         allProperties.add(properties);
         for (Property property: properties){
