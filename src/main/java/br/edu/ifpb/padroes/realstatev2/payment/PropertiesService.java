@@ -33,7 +33,7 @@ public class PropertiesService {
         tenament.setPrice(BigDecimal.valueOf(100000));
 
         // TODO - reduzir chamadas múltiplas para uma única chamada para o método pay() utilizando o padrão composite
-        paymentService.payProperties(apartment, bungalow, tenament);
+        paymentService.pay(apartment, bungalow, tenament);
 
     }
 
